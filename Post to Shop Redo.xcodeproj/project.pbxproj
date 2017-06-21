@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046A2C67138AB00B3BF297A8 /* Pods_Post_to_Shop_Redo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83C6A75F282EE9F2369B84E /* Pods_Post_to_Shop_Redo.framework */; };
+		1E2C2E851EFAE369004CF370 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E2C2E841EFAE369004CF370 /* GoogleService-Info.plist */; };
+		1E4AE2E81EFA18AC00DDCA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AE2E71EFA18AC00DDCA7C /* AppDelegate.swift */; };
+		1E4AE2EA1EFA18AC00DDCA7C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AE2E91EFA18AC00DDCA7C /* HomeController.swift */; };
+		1E4AE2EF1EFA18AC00DDCA7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4AE2EE1EFA18AC00DDCA7C /* Assets.xcassets */; };
+		1E4AE2F21EFA18AC00DDCA7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4AE2F01EFA18AC00DDCA7C /* LaunchScreen.storyboard */; };
+		1E64EF571EFAE7D000FEF760 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF561EFAE7D000FEF760 /* AccountController.swift */; };
+		1E64EF591EFAE82B00FEF760 /* BrandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF581EFAE82B00FEF760 /* BrandsController.swift */; };
+		1E64EF5B1EFAE85D00FEF760 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF5A1EFAE85D00FEF760 /* HomeDatasourceController.swift */; };
+		1E64EF5D1EFAE89F00FEF760 /* HomeDatasourceController+navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF5C1EFAE89F00FEF760 /* HomeDatasourceController+navbar.swift */; };
+		1E64EF5F1EFAE8C200FEF760 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF5E1EFAE8C200FEF760 /* LoginController.swift */; };
+		1E64EF611EFAE8F200FEF760 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF601EFAE8F200FEF760 /* CustomTabBarController.swift */; };
+		1E64EF641EFAE92700FEF760 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF631EFAE92700FEF760 /* HomeDatasource.swift */; };
+		1E64EF661EFAE94E00FEF760 /* UserProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF651EFAE94E00FEF760 /* UserProduct.swift */; };
+		1E64EF691EFAE9A700FEF760 /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF681EFAE9A700FEF760 /* UserHeaderFooter.swift */; };
+		1E64EF6B1EFAE9C300FEF760 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF6A1EFAE9C300FEF760 /* UserCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E2C2E841EFAE369004CF370 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E4AE2E41EFA18AC00DDCA7C /* Post to Shop Redo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Post to Shop Redo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E4AE2E71EFA18AC00DDCA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E4AE2E91EFA18AC00DDCA7C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		1E4AE2EE1EFA18AC00DDCA7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E4AE2F11EFA18AC00DDCA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E4AE2F31EFA18AC00DDCA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E64EF561EFAE7D000FEF760 /* AccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
+		1E64EF581EFAE82B00FEF760 /* BrandsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandsController.swift; sourceTree = "<group>"; };
+		1E64EF5A1EFAE85D00FEF760 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
+		1E64EF5C1EFAE89F00FEF760 /* HomeDatasourceController+navbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+navbar.swift"; sourceTree = "<group>"; };
+		1E64EF5E1EFAE8C200FEF760 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1E64EF601EFAE8F200FEF760 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		1E64EF631EFAE92700FEF760 /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		1E64EF651EFAE94E00FEF760 /* UserProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProduct.swift; sourceTree = "<group>"; };
+		1E64EF681EFAE9A700FEF760 /* UserHeaderFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
+		1E64EF6A1EFAE9C300FEF760 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		35FC7B09BA9868C770D282BA /* Pods-Post to Shop Redo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Post to Shop Redo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Post to Shop Redo/Pods-Post to Shop Redo.release.xcconfig"; sourceTree = "<group>"; };
+		A83C6A75F282EE9F2369B84E /* Pods_Post_to_Shop_Redo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Post_to_Shop_Redo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27068AB18359A6CAFA0C96B /* Pods-Post to Shop Redo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Post to Shop Redo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Post to Shop Redo/Pods-Post to Shop Redo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E4AE2E11EFA18AC00DDCA7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046A2C67138AB00B3BF297A8 /* Pods_Post_to_Shop_Redo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E4AE2DB1EFA18AC00DDCA7C = {
+			isa = PBXGroup;
+			children = (
+				1E4AE2E61EFA18AC00DDCA7C /* Post to Shop Redo */,
+				1E4AE2E51EFA18AC00DDCA7C /* Products */,
+				B3E5C06DFFF9C22F3F833952 /* Pods */,
+				5F1B544EE3DA100FDF67D69A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E4AE2E51EFA18AC00DDCA7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E4AE2E41EFA18AC00DDCA7C /* Post to Shop Redo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E4AE2E61EFA18AC00DDCA7C /* Post to Shop Redo */ = {
+			isa = PBXGroup;
+			children = (
+				1E64EF671EFAE98500FEF760 /* View */,
+				1E64EF621EFAE90F00FEF760 /* Model */,
+				1E64EF551EFAE7AE00FEF760 /* Controller */,
+				1E4AE2E71EFA18AC00DDCA7C /* AppDelegate.swift */,
+				1E4AE2E91EFA18AC00DDCA7C /* HomeController.swift */,
+				1E4AE2EE1EFA18AC00DDCA7C /* Assets.xcassets */,
+				1E4AE2F01EFA18AC00DDCA7C /* LaunchScreen.storyboard */,
+				1E4AE2F31EFA18AC00DDCA7C /* Info.plist */,
+				1E2C2E841EFAE369004CF370 /* GoogleService-Info.plist */,
+			);
+			path = "Post to Shop Redo";
+			sourceTree = "<group>";
+		};
+		1E64EF551EFAE7AE00FEF760 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E64EF561EFAE7D000FEF760 /* AccountController.swift */,
+				1E64EF581EFAE82B00FEF760 /* BrandsController.swift */,
+				1E64EF5A1EFAE85D00FEF760 /* HomeDatasourceController.swift */,
+				1E64EF5C1EFAE89F00FEF760 /* HomeDatasourceController+navbar.swift */,
+				1E64EF5E1EFAE8C200FEF760 /* LoginController.swift */,
+				1E64EF601EFAE8F200FEF760 /* CustomTabBarController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1E64EF621EFAE90F00FEF760 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E64EF631EFAE92700FEF760 /* HomeDatasource.swift */,
+				1E64EF651EFAE94E00FEF760 /* UserProduct.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1E64EF671EFAE98500FEF760 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E64EF681EFAE9A700FEF760 /* UserHeaderFooter.swift */,
+				1E64EF6A1EFAE9C300FEF760 /* UserCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5F1B544EE3DA100FDF67D69A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A83C6A75F282EE9F2369B84E /* Pods_Post_to_Shop_Redo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3E5C06DFFF9C22F3F833952 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C27068AB18359A6CAFA0C96B /* Pods-Post to Shop Redo.debug.xcconfig */,
+				35FC7B09BA9868C770D282BA /* Pods-Post to Shop Redo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E4AE2E31EFA18AC00DDCA7C /* Post to Shop Redo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E4AE2F61EFA18AC00DDCA7C /* Build configuration list for PBXNativeTarget "Post to Shop Redo" */;
+			buildPhases = (
+				221D48163FEE01D19C8140CF /* [CP] Check Pods Manifest.lock */,
+				1E4AE2E01EFA18AC00DDCA7C /* Sources */,
+				1E4AE2E11EFA18AC00DDCA7C /* Frameworks */,
+				1E4AE2E21EFA18AC00DDCA7C /* Resources */,
+				2EB0A30B77C09481C5CD5066 /* [CP] Embed Pods Frameworks */,
+				9A8F0A9C4A7337936BC85CBF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Post to Shop Redo";
+			productName = "Post to Shop Redo";
+			productReference = 1E4AE2E41EFA18AC00DDCA7C /* Post to Shop Redo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E4AE2DC1EFA18AC00DDCA7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Post to Shop";
+				TargetAttributes = {
+					1E4AE2E31EFA18AC00DDCA7C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = AZ8VK3Z3SR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1E4AE2DF1EFA18AC00DDCA7C /* Build configuration list for PBXProject "Post to Shop Redo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E4AE2DB1EFA18AC00DDCA7C;
+			productRefGroup = 1E4AE2E51EFA18AC00DDCA7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E4AE2E31EFA18AC00DDCA7C /* Post to Shop Redo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E4AE2E21EFA18AC00DDCA7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E4AE2F21EFA18AC00DDCA7C /* LaunchScreen.storyboard in Resources */,
+				1E4AE2EF1EFA18AC00DDCA7C /* Assets.xcassets in Resources */,
+				1E2C2E851EFAE369004CF370 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		221D48163FEE01D19C8140CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2EB0A30B77C09481C5CD5066 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Post to Shop Redo/Pods-Post to Shop Redo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A8F0A9C4A7337936BC85CBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Post to Shop Redo/Pods-Post to Shop Redo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E4AE2E01EFA18AC00DDCA7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E64EF5B1EFAE85D00FEF760 /* HomeDatasourceController.swift in Sources */,
+				1E64EF571EFAE7D000FEF760 /* AccountController.swift in Sources */,
+				1E64EF611EFAE8F200FEF760 /* CustomTabBarController.swift in Sources */,
+				1E64EF641EFAE92700FEF760 /* HomeDatasource.swift in Sources */,
+				1E4AE2EA1EFA18AC00DDCA7C /* HomeController.swift in Sources */,
+				1E64EF5D1EFAE89F00FEF760 /* HomeDatasourceController+navbar.swift in Sources */,
+				1E64EF691EFAE9A700FEF760 /* UserHeaderFooter.swift in Sources */,
+				1E4AE2E81EFA18AC00DDCA7C /* AppDelegate.swift in Sources */,
+				1E64EF6B1EFAE9C300FEF760 /* UserCell.swift in Sources */,
+				1E64EF591EFAE82B00FEF760 /* BrandsController.swift in Sources */,
+				1E64EF661EFAE94E00FEF760 /* UserProduct.swift in Sources */,
+				1E64EF5F1EFAE8C200FEF760 /* LoginController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1E4AE2F01EFA18AC00DDCA7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E4AE2F11EFA18AC00DDCA7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E4AE2F41EFA18AC00DDCA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E4AE2F51EFA18AC00DDCA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E4AE2F71EFA18AC00DDCA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27068AB18359A6CAFA0C96B /* Pods-Post to Shop Redo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AZ8VK3Z3SR;
+				INFOPLIST_FILE = "Post to Shop Redo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PosttoShop.Post-to-Shop-Redo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1E4AE2F81EFA18AC00DDCA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35FC7B09BA9868C770D282BA /* Pods-Post to Shop Redo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AZ8VK3Z3SR;
+				INFOPLIST_FILE = "Post to Shop Redo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PosttoShop.Post-to-Shop-Redo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E4AE2DF1EFA18AC00DDCA7C /* Build configuration list for PBXProject "Post to Shop Redo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4AE2F41EFA18AC00DDCA7C /* Debug */,
+				1E4AE2F51EFA18AC00DDCA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E4AE2F61EFA18AC00DDCA7C /* Build configuration list for PBXNativeTarget "Post to Shop Redo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4AE2F71EFA18AC00DDCA7C /* Debug */,
+				1E4AE2F81EFA18AC00DDCA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E4AE2DC1EFA18AC00DDCA7C /* Project object */;
+}

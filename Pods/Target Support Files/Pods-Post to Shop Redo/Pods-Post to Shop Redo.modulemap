@@ -1,0 +1,6 @@
+framework module Pods_Post_to_Shop_Redo {
+  umbrella header "Pods-Post to Shop Redo-umbrella.h"
+
+  export *
+  module * { export * }
+}
