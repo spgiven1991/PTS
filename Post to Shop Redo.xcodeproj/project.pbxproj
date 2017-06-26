@@ -23,7 +23,41 @@
 		1E64EF661EFAE94E00FEF760 /* UserProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF651EFAE94E00FEF760 /* UserProduct.swift */; };
 		1E64EF691EFAE9A700FEF760 /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF681EFAE9A700FEF760 /* UserHeaderFooter.swift */; };
 		1E64EF6B1EFAE9C300FEF760 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E64EF6A1EFAE9C300FEF760 /* UserCell.swift */; };
+		1E72E4E01EFB3B61000D811F /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E72E4DF1EFB3B61000D811F /* ShareViewController.swift */; };
+		1E72E4E31EFB3B61000D811F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E72E4E11EFB3B61000D811F /* MainInterface.storyboard */; };
+		1E72E4E71EFB3B61000D811F /* Post to Shop.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E72E4DD1EFB3B5F000D811F /* Post to Shop.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1E72E4EF1EFBF594000D811F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E72E4EE1EFBF593000D811F /* CoreDataStack.swift */; };
+		1EDBCA001EFDABC700197550 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E72E4EE1EFBF593000D811F /* CoreDataStack.swift */; };
+		1EEFAAEF1EFC088A003C7667 /* LinksModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAAED1EFC088A003C7667 /* LinksModel.xcdatamodeld */; };
+		1EEFAAF01EFC08D4003C7667 /* LinksModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAAED1EFC088A003C7667 /* LinksModel.xcdatamodeld */; };
+		1EEFAAF21EFC1178003C7667 /* ShareSelectTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAAF11EFC1178003C7667 /* ShareSelectTVC.swift */; };
+		1EEFAAF41EFD5719003C7667 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAAF31EFD5718003C7667 /* CustomTextView.swift */; };
+		1EEFAAF61EFD89D9003C7667 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFAAF51EFD89D9003C7667 /* InitialVC.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E72E4E51EFB3B61000D811F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E4AE2DC1EFA18AC00DDCA7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E72E4DC1EFB3B5F000D811F;
+			remoteInfo = "Post to Shop";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E72E4EB1EFB3B62000D811F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1E72E4E71EFB3B61000D811F /* Post to Shop.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E2C2E841EFAE369004CF370 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -43,6 +77,17 @@
 		1E64EF651EFAE94E00FEF760 /* UserProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProduct.swift; sourceTree = "<group>"; };
 		1E64EF681EFAE9A700FEF760 /* UserHeaderFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		1E64EF6A1EFAE9C300FEF760 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		1E72E4DD1EFB3B5F000D811F /* Post to Shop.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Post to Shop.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E72E4DF1EFB3B61000D811F /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		1E72E4E21EFB3B61000D811F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1E72E4E41EFB3B61000D811F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E72E4EC1EFB3D6F000D811F /* Post to Shop Redo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Post to Shop Redo.entitlements"; sourceTree = "<group>"; };
+		1E72E4ED1EFB3D9E000D811F /* Post to Shop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Post to Shop.entitlements"; sourceTree = "<group>"; };
+		1E72E4EE1EFBF593000D811F /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		1EEFAAEE1EFC088A003C7667 /* LinksModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LinksModel.xcdatamodel; sourceTree = "<group>"; };
+		1EEFAAF11EFC1178003C7667 /* ShareSelectTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareSelectTVC.swift; sourceTree = "<group>"; };
+		1EEFAAF31EFD5718003C7667 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		1EEFAAF51EFD89D9003C7667 /* InitialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 		35FC7B09BA9868C770D282BA /* Pods-Post to Shop Redo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Post to Shop Redo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Post to Shop Redo/Pods-Post to Shop Redo.release.xcconfig"; sourceTree = "<group>"; };
 		A83C6A75F282EE9F2369B84E /* Pods_Post_to_Shop_Redo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Post_to_Shop_Redo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27068AB18359A6CAFA0C96B /* Pods-Post to Shop Redo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Post to Shop Redo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Post to Shop Redo/Pods-Post to Shop Redo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +102,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E72E4DA1EFB3B5F000D811F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				1E4AE2E61EFA18AC00DDCA7C /* Post to Shop Redo */,
+				1E72E4DE1EFB3B60000D811F /* Post to Shop */,
 				1E4AE2E51EFA18AC00DDCA7C /* Products */,
 				B3E5C06DFFF9C22F3F833952 /* Pods */,
 				5F1B544EE3DA100FDF67D69A /* Frameworks */,
@@ -74,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				1E4AE2E41EFA18AC00DDCA7C /* Post to Shop Redo.app */,
+				1E72E4DD1EFB3B5F000D811F /* Post to Shop.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +135,7 @@
 		1E4AE2E61EFA18AC00DDCA7C /* Post to Shop Redo */ = {
 			isa = PBXGroup;
 			children = (
+				1EEFAAEC1EFC0824003C7667 /* Core Data */,
 				1E64EF671EFAE98500FEF760 /* View */,
 				1E64EF621EFAE90F00FEF760 /* Model */,
 				1E64EF551EFAE7AE00FEF760 /* Controller */,
@@ -103,6 +158,7 @@
 				1E64EF5C1EFAE89F00FEF760 /* HomeDatasourceController+navbar.swift */,
 				1E64EF5E1EFAE8C200FEF760 /* LoginController.swift */,
 				1E64EF601EFAE8F200FEF760 /* CustomTabBarController.swift */,
+				1EEFAAF51EFD89D9003C7667 /* InitialVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -121,8 +177,31 @@
 			children = (
 				1E64EF681EFAE9A700FEF760 /* UserHeaderFooter.swift */,
 				1E64EF6A1EFAE9C300FEF760 /* UserCell.swift */,
+				1EEFAAF31EFD5718003C7667 /* CustomTextView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		1E72E4DE1EFB3B60000D811F /* Post to Shop */ = {
+			isa = PBXGroup;
+			children = (
+				1E72E4ED1EFB3D9E000D811F /* Post to Shop.entitlements */,
+				1E72E4DF1EFB3B61000D811F /* ShareViewController.swift */,
+				1EEFAAF11EFC1178003C7667 /* ShareSelectTVC.swift */,
+				1E72E4E11EFB3B61000D811F /* MainInterface.storyboard */,
+				1E72E4E41EFB3B61000D811F /* Info.plist */,
+			);
+			path = "Post to Shop";
+			sourceTree = "<group>";
+		};
+		1EEFAAEC1EFC0824003C7667 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				1E72E4EC1EFB3D6F000D811F /* Post to Shop Redo.entitlements */,
+				1E72E4EE1EFBF593000D811F /* CoreDataStack.swift */,
+				1EEFAAED1EFC088A003C7667 /* LinksModel.xcdatamodeld */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 		5F1B544EE3DA100FDF67D69A /* Frameworks */ = {
@@ -155,15 +234,34 @@
 				1E4AE2E21EFA18AC00DDCA7C /* Resources */,
 				2EB0A30B77C09481C5CD5066 /* [CP] Embed Pods Frameworks */,
 				9A8F0A9C4A7337936BC85CBF /* [CP] Copy Pods Resources */,
+				1E72E4EB1EFB3B62000D811F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1E72E4E61EFB3B61000D811F /* PBXTargetDependency */,
 			);
 			name = "Post to Shop Redo";
 			productName = "Post to Shop Redo";
 			productReference = 1E4AE2E41EFA18AC00DDCA7C /* Post to Shop Redo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1E72E4DC1EFB3B5F000D811F /* Post to Shop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E72E4E81EFB3B62000D811F /* Build configuration list for PBXNativeTarget "Post to Shop" */;
+			buildPhases = (
+				1E72E4D91EFB3B5F000D811F /* Sources */,
+				1E72E4DA1EFB3B5F000D811F /* Frameworks */,
+				1E72E4DB1EFB3B5F000D811F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Post to Shop";
+			productName = "Post to Shop";
+			productReference = 1E72E4DD1EFB3B5F000D811F /* Post to Shop.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -179,6 +277,21 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = AZ8VK3Z3SR;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					1E72E4DC1EFB3B5F000D811F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = AZ8VK3Z3SR;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -196,6 +309,7 @@
 			projectRoot = "";
 			targets = (
 				1E4AE2E31EFA18AC00DDCA7C /* Post to Shop Redo */,
+				1E72E4DC1EFB3B5F000D811F /* Post to Shop */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +322,14 @@
 				1E4AE2F21EFA18AC00DDCA7C /* LaunchScreen.storyboard in Resources */,
 				1E4AE2EF1EFA18AC00DDCA7C /* Assets.xcassets in Resources */,
 				1E2C2E851EFAE369004CF370 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E72E4DB1EFB3B5F000D811F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E72E4E31EFB3B61000D811F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,16 +394,39 @@
 				1E64EF641EFAE92700FEF760 /* HomeDatasource.swift in Sources */,
 				1E4AE2EA1EFA18AC00DDCA7C /* HomeController.swift in Sources */,
 				1E64EF5D1EFAE89F00FEF760 /* HomeDatasourceController+navbar.swift in Sources */,
+				1E72E4EF1EFBF594000D811F /* CoreDataStack.swift in Sources */,
 				1E64EF691EFAE9A700FEF760 /* UserHeaderFooter.swift in Sources */,
 				1E4AE2E81EFA18AC00DDCA7C /* AppDelegate.swift in Sources */,
+				1EEFAAEF1EFC088A003C7667 /* LinksModel.xcdatamodeld in Sources */,
 				1E64EF6B1EFAE9C300FEF760 /* UserCell.swift in Sources */,
+				1EEFAAF41EFD5719003C7667 /* CustomTextView.swift in Sources */,
 				1E64EF591EFAE82B00FEF760 /* BrandsController.swift in Sources */,
+				1EEFAAF61EFD89D9003C7667 /* InitialVC.swift in Sources */,
 				1E64EF661EFAE94E00FEF760 /* UserProduct.swift in Sources */,
 				1E64EF5F1EFAE8C200FEF760 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E72E4D91EFB3B5F000D811F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E72E4E01EFB3B61000D811F /* ShareViewController.swift in Sources */,
+				1EEFAAF01EFC08D4003C7667 /* LinksModel.xcdatamodeld in Sources */,
+				1EEFAAF21EFC1178003C7667 /* ShareSelectTVC.swift in Sources */,
+				1EDBCA001EFDABC700197550 /* CoreDataStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E72E4E61EFB3B61000D811F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E72E4DC1EFB3B5F000D811F /* Post to Shop */;
+			targetProxy = 1E72E4E51EFB3B61000D811F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1E4AE2F01EFA18AC00DDCA7C /* LaunchScreen.storyboard */ = {
@@ -290,6 +435,14 @@
 				1E4AE2F11EFA18AC00DDCA7C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1E72E4E11EFB3B61000D811F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E72E4E21EFB3B61000D811F /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -392,7 +545,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C27068AB18359A6CAFA0C96B /* Pods-Post to Shop Redo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Post to Shop Redo/Post to Shop Redo.entitlements";
 				DEVELOPMENT_TEAM = AZ8VK3Z3SR;
 				INFOPLIST_FILE = "Post to Shop Redo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -406,12 +561,42 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35FC7B09BA9868C770D282BA /* Pods-Post to Shop Redo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Post to Shop Redo/Post to Shop Redo.entitlements";
 				DEVELOPMENT_TEAM = AZ8VK3Z3SR;
 				INFOPLIST_FILE = "Post to Shop Redo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PosttoShop.Post-to-Shop-Redo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1E72E4E91EFB3B62000D811F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Post to Shop/Post to Shop.entitlements";
+				DEVELOPMENT_TEAM = AZ8VK3Z3SR;
+				INFOPLIST_FILE = "Post to Shop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PosttoShop.Post-to-Shop-Redo.Post-to-Shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1E72E4EA1EFB3B62000D811F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Post to Shop/Post to Shop.entitlements";
+				DEVELOPMENT_TEAM = AZ8VK3Z3SR;
+				INFOPLIST_FILE = "Post to Shop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PosttoShop.Post-to-Shop-Redo.Post-to-Shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -437,7 +622,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1E72E4E81EFB3B62000D811F /* Build configuration list for PBXNativeTarget "Post to Shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E72E4E91EFB3B62000D811F /* Debug */,
+				1E72E4EA1EFB3B62000D811F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1EEFAAED1EFC088A003C7667 /* LinksModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1EEFAAEE1EFC088A003C7667 /* LinksModel.xcdatamodel */,
+			);
+			currentVersion = 1EEFAAEE1EFC088A003C7667 /* LinksModel.xcdatamodel */;
+			path = LinksModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1E4AE2DC1EFA18AC00DDCA7C /* Project object */;
 }

@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Post to Shop.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1E4AE2E31EFA18AC00DDCA7C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E72E4DC1EFB3B5F000D811F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -22,8 +22,9 @@ class CustomTabBarController: UITabBarController {
         navViewController.title = "My Clothes"
         navViewController.tabBarItem.image = #imageLiteral(resourceName: "MyClothes")
         
-        let brandsCoontroller = BrandsController()
-        let secondNavigationController = UINavigationController(rootViewController: brandsCoontroller)
+        let mainView = InitialVC()
+//        let brandsController = BrandsController()
+        let secondNavigationController = UINavigationController(rootViewController: mainView)
         secondNavigationController.title = "Brands"
         secondNavigationController.tabBarItem.image = #imageLiteral(resourceName: "Brands")
         

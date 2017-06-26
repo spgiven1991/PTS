@@ -13,6 +13,8 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    let store = CoreDataStack.store
+    
     var window: UIWindow?
     
     
