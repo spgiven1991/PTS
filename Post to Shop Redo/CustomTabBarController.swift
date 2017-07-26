@@ -18,13 +18,16 @@ class CustomTabBarController: UITabBarController {
         //        https://www.iconfinder.com/search/?q=store&price=free
         //        let homeController = HomeController(collectionViewLayout: UICollectionViewFlowLayout())
         //        let homeViewController = UINavigationController(rootViewController: homeController)
-        let navViewController = UINavigationController(rootViewController: HomeDatasourceController())
+//        let navViewController = UINavigationController(rootViewController: HomeDatasourceController())
+        let redoIC = HomeController(collectionViewLayout: UICollectionViewFlowLayout())
+        let navViewController = UINavigationController(rootViewController: redoIC)
         navViewController.title = "My Clothes"
         navViewController.tabBarItem.image = #imageLiteral(resourceName: "MyClothes")
         
-        let mainView = InitialVC()
-//        let brandsController = BrandsController()
-        let secondNavigationController = UINavigationController(rootViewController: mainView)
+//        let mainView = InitialVC()
+        let brandsController = BrandsController()
+//        let redoIC = HomeController(collectionViewLayout: UICollectionViewFlowLayout())
+        let secondNavigationController = UINavigationController(rootViewController: brandsController)
         secondNavigationController.title = "Brands"
         secondNavigationController.tabBarItem.image = #imageLiteral(resourceName: "Brands")
         

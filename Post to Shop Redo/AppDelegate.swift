@@ -13,8 +13,6 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    let store = CoreDataStack.store
-    
     var window: UIWindow?
     
     
@@ -25,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        //        let homeController = HomeController(collectionViewLayout: UICollectionViewFlowLayout())
-        //        window?.rootViewController = UINavigationController(rootViewController: homeController)
-        //        window?.rootViewController = UINavigationController(rootViewController: HomeDatasourceController())
+//                let homeController = HomeController(collectionViewLayout: UICollectionViewFlowLayout())
+//                window?.rootViewController = UINavigationController(rootViewController: homeController)
+//                window?.rootViewController = UINavigationController(rootViewController: HomeDatasourceController())
         
         window?.rootViewController = CustomTabBarController()
         

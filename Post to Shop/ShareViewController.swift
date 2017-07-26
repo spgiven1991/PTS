@@ -7,112 +7,108 @@
 //
 
 import UIKit
+//import Foundation
 import Social
+import Firebase
+import FirebaseCore
+import FirebaseAuth
+import FirebaseDatabase
 import MobileCoreServices
-import CoreData
 
 class ShareViewController: SLComposeServiceViewController {
     
+    var user: myUser?
+    
     private var urlString: String?
-    private var textString: String?
-    var selectedLink: Link!
-    let store = CoreDataStack.store
-    var links = [Link]()
+    private var schemeString: String?
+    private var hostString: String?
+    private var pathString: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        store.fetchLinks()
-        links = store.fetchedLinks
-        
         let extensionItem = extensionContext?.inputItems[0] as! NSExtensionItem
         let contentTypeURL = kUTTypeURL as String
-        let contentTypeText = kUTTypeText as String
         
         for attachment in extensionItem.attachments as! [NSItemProvider] {
             if attachment.isURL {
                 attachment.loadItem(forTypeIdentifier: contentTypeURL, options: nil, completionHandler: { (results, error) in
                     let url = results as! URL?
                     self.urlString = url!.absoluteString
-                })
-            }
-            if attachment.isText {
-                attachment.loadItem(forTypeIdentifier: contentTypeText, options: nil, completionHandler: { (results, error) in
-                    let text = results as! String
-                    _ = self.isContentValid()
+                    self.schemeString = url!.scheme
+                    self.hostString = url!.host
+                    self.pathString = url!.path
                 })
             }
         }
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
+        }
+//        checkIfUserIsLoggedIn()
+//        handleLogout()
     }
-
+    
     override func isContentValid() -> Bool {
         
-        if urlString != nil || textString != nil {
-            if !contentText.isEmpty {
-                return true
-            }
-        }
         return true
     }
-
+    
     override func didSelectPost() {
-        guard let text = textView.text else {return}
-        let date = NSDate()
         
-        if selectedLink == nil {
-            if let string = urlString {
-                store.storeLink(withTitle: "\(text)\n\(string)", onDate: date)
-            } else {
-                store.storeLink(withTitle: text, onDate: date)
-            }
-        } else {
-            var currentTitle = selectedLink.title!
-            if let string = urlString {
-                currentTitle.append("\n\(text)\n\(string)")
-                store.storeLink(withTitle: currentTitle, onDate: date)
-                store.delete(link: selectedLink)
-            } else {
-                currentTitle.append("\n\(text)")
-                store.storeLink(withTitle: currentTitle, onDate: date)
-                store.delete(link: selectedLink)
-            }
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
         }
         
+        handlePost()
         
-        extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
+        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
     }
-
+    
     override func configurationItems() -> [Any]! {
-        let item = SLComposeSheetConfigurationItem()
-        item?.title = "Selected Link"
-        item?.value = selectedLink?.title ?? "New Link"
-        item?.tapHandler = {
-            let vc = ShareSelectTVC()
-            vc.delegate = self
-            vc.userLinks = self.links
-            self.pushConfigurationViewController(vc)
-        }
-        return [item]
+        // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
+        return []
     }
-
-}
-
-extension ShareViewController: ShareSelectViewControllerDelegate {
-    func selected(link: Link) {
-        selectedLink = link
-        reloadConfigurationItems()
-        popConfigurationViewController()
+    
+//    func checkIfUserIsLoggedIn() {
+//        
+//        if Auth.auth().currentUser?.uid == nil {
+//            perform(#selector(handleLogout), with: nil, afterDelay: 0)
+//        }
+//        //        } else {
+//        //            let uid = Auth.auth().currentUser?.uid
+//        //            Database.database().reference().child("users").child(uid!).observe(.value, with: { (snapshot) in
+//        //                    print(snapshot)
+//        //                }, withCancel: nil)
+//        //            }
+//    }
+    
+//    func handleLogout() {
+//        
+//        do {
+//            try Auth.auth().signOut()
+//        } catch let logoutError {
+//            print(logoutError)
+//        }
+////        
+////        let loginController = LoginController()
+////        present(loginController, animated: true, completion: nil)
+//    }
+    
+    func handlePost() {
+        let ref = Database.database().reference().child("link")
+        let childRef = ref.childByAutoId()
+        let userId = "HELP"
+        let timestamp = NSDate().timeIntervalSince1970
+        let values = ["userLink": urlString!, "scheme": schemeString!, "host": hostString!, "path": pathString!, "userId": userId, "timestamp": timestamp] as [String : Any]
+        childRef.updateChildValues(values)
     }
+    
 }
 
 extension NSItemProvider {
     
     var isURL: Bool {
         return hasItemConformingToTypeIdentifier(kUTTypeURL as String)
-    }
-    
-    var isText: Bool {
-        return hasItemConformingToTypeIdentifier(kUTTypeText as String)
     }
 }
 

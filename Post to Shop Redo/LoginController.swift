@@ -11,6 +11,8 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
+let postToShopRed = UIColor(r: 233, g: 27, b: 129)
+
 class LoginController: UIViewController {
     
     let inputViewContainer: UIView = {
